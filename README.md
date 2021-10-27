@@ -1,24 +1,13 @@
-# Virtual-piano
-Java aplication with GUI for playing Piano and learning to play songs.
-
 # Virtual Piano
  Java aplication with GUI for playing Piano and learning to play songs.
 
 ## Introduction
- This project is made to simulate simple file system. It requires input file which you can modify using the simulated file system. Some of the file operations that are present includes:
-    -mount/unmount partition
-    -format partition
-    -open file (in various modes - Write, Read, Append)
-    -check if file exists
-    -write
-    -seek
-    -check if EOF
-    -truncate
-and so on.
-Program uses two threads that open the same file, read from it and write to new files concurrently.
+ Program made to enable playing piano on your computer keyboard. Virtual Piano is also capable of loading some of the songs and then playing them while at the same time showing how to play them on piano. It also shows current keyboard keys that needs to be played, and have a live recognition of when the right keys are pressed. It can also record your piano playing and save it in midi format (still in beta).
 
 ## Instruction
- Directory tests/ contains test files. Copy one to FileSystem/ directory and rename it to "ulaz.dat". Start the program using Visual Studio. After program completes there should be two output files "izlaz1.dat" and "izlaz2.dat". Rename them to have extension same as input file before renaming to "ulaz.dat". Two threads read different parts of input file and write it to two new files ("izlaz1.dat" and "izlaz2.dat") each with different order, e.g. in some of the output file first the second part of input file is written, then cursor of the output file is moved to the beginning and then the first part of input file is appended, so we should get the same output file as the input one. Almost the same is done for the second output file, but methods used to read input and write to the second output are different. Both output files should be same as input one.
+ Run MainFrame.java. You will be met with a new window. Click "Menu/Add composition text" from the toolbar. Type path to the key-note mappings and composition that you want to play/learn. Virtual piano will show up and keyboard keys as notes that need to be played will apear beneath it. As you play the right notes, keyboard keys that need to be played will move to the current keys. You can also click play button at any time if you want to hear piano do the rest of the song automatically. Clicking play button multiple times will increase speed of the song. Beta: click record button to record your playing. After you are done with recording hit save button to save it.
+ 
+ If you want only to play good old simple piano without the added functionalities, you can run Piano.java.
 
 ### Info
- Developed using Visual Studio 2019.
+ Developed using Eclipse.
