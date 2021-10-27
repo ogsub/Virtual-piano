@@ -1,5 +1,5 @@
 # Virtual Piano
- Java aplication with GUI for playing Piano and learning how to play songs.
+ Java application with GUI for playing Piano and learning how to play songs.
 
 ## Introduction
  Program made to enable playing piano on your computer keyboard. Virtual Piano is also capable of loading some of the songs and then playing them while at the same time showing how to play them on piano. It also shows current keyboard keys that needs to be played, and have a live recognition of when the right keys are pressed. It can also record your piano playing and save it in midi format (still in beta).
