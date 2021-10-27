@@ -79,7 +79,7 @@ public class Piano extends Panel {
 			Runnable terminate = new Runnable() {
 				@Override
 				public void run() {
-					System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaa");
+					//System.out.println("debug1");
 					synchronized (buffer) {
 						if(recording)
 							txtConverter.write(buffer);
@@ -96,13 +96,13 @@ public class Piano extends Panel {
 							if(!same.get())
 								buffer.clear();
 							
-							System.out.println("LALALAL");
+							//System.out.println("debug2");
 							if (same.get() && !buffer.isEmpty())
 								gc.shiftLeft();
 						}
-						}catch(Exception e){System.out.println("Hejj");}
+						}catch(Exception e){/*System.out.println("");*/}
 						buffer.clear();
-						System.out.println("LALALAL2");
+						//System.out.println("debug3");
 					}
 				}
 			};
